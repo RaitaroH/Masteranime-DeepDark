@@ -2,7 +2,7 @@
 @name Masteranime DeepDark
 @namespace github.com/RaitaroH/Masteranime-DeepDark
 @homepageURL https://github.com/RaitaroH/Masteranime-DeepDark
-@version 1.0.0
+@version 1.0.1
 @updateURL https://rawgit.com/RaitaroH/Masteranime-DeepDark/master/Masteranime-DeepDark.user.css
 @description Watch anime in a bright room with a dark theme. May the dark be kinder on thine eyes. (Masteranime dark theme)
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0.*/
 
-/*1.0.0*/
+/*1.0.1*/
 
 	/*Main color variables*/
 	:root
@@ -599,6 +599,12 @@
 	#watch > .ui.grid > .anime-video .options
 	{
 		background: var(--main-background) !important;
+	}
+	/*next and prev buttons*/
+	.ui.basic.button.small.svg.uppercase:hover, .ui.basic.button.small.svg.uppercase:hover svg {
+		color: var(--main-color) !important;
+		fill: var(--main-color) !important;
+		transition: none !important;
 	}
 
 	/*Login*/
