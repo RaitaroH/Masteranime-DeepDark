@@ -2,7 +2,7 @@
 @name Masteranime DeepDark
 @namespace github.com/RaitaroH/Masteranime-DeepDark
 @homepageURL https://github.com/RaitaroH/Masteranime-DeepDark
-@version 1.0.4
+@version 1.0.5
 @updateURL https://rawgit.com/RaitaroH/Masteranime-DeepDark/master/Masteranime-DeepDark.user.css
 @description Watch anime in a bright room with a dark theme. May the dark be kinder on thine eyes. (Masteranime dark theme)
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0.*/
 
-/*1.0.4*/
+/*1.0.5*/
 
 	/*Main color variables*/
 	:root
@@ -627,6 +627,17 @@
 	{
 		border-color: var(--hover-background) !important;
 	}
+	/*Default video player*/
+	/*scrubber, audio*/
+	.vjs-masterani-skin .vjs-control-bar .vjs-progress-control .vjs-play-progress, .vjs-masterani-skin .vjs-control-bar .vjs-volume-menu-button .vjs-volume-bar .vjs-volume-level
+	{
+		background-color: var(--main-color) !important;
+	}
+	/*buttons*/
+	.video-js .vjs-big-play-button:hover, .video-js .vjs-control:hover
+	{
+		color: var(--main-color) !important;
+	}
 
 	/*Login*/
 	.ui.modal > .content, .ui.modal.master .options
@@ -653,5 +664,70 @@
 	.ui.input input::-moz-placeholder
 	{
 		color: var(--dimmer-text) !important;
+	}
+}
+@-moz-document domain('mp4upload.com') {
+
+	#player .jw-display-icon-container .jw-button-color:hover, #player .jw-display-icon-container .jw-button-color:focus,
+	#player .jw-button-color.jw-toggle:not(.jw-icon-cast), #player .jw-button-color:hover:not(.jw-icon-cast), 
+	#player .jw-button-color:focus:not(.jw-icon-cast), #player .jw-button-color.jw-toggle.jw-off:hover:not(.jw-icon-cast)
+	{
+		color: /*[[mainColor]]*/ !important;
+	}
+	#player .jw-progress, #player .jw-knob
+	{
+		background-color: /*[[mainColor]]*/ !important;
+	}
+	#player .jw-buffer
+	{
+		background-color: /*[[dimmerText]]*/ !important;
+	}
+	#player .jw-option.jw-active-option, #player .jw-option:not(.jw-active-option):hover, #player .jw-option:not(.jw-active-option):focus, 
+	#player .jw-settings-item-active, #player .jw-settings-content-item:hover, #player .jw-settings-content-item:focus, 
+	#player .jw-nextup-tooltip:hover, #player .jw-nextup-tooltip:focus, #player .jw-nextup-close:hover
+	{
+		color: /*[[mainColor]]*/ !important;
+	}
+	#player .jw-color-active, #player .jw-color-active-hover:hover
+	{
+		color: /*[[mainColor]]*/ !important;
+		border-color: /*[[mainColor]]*/ !important;
+		stroke: /*[[mainColor]]*/ !important;
+	}
+}
+@-moz-document domain('rapidvideo.com'), domain('openload.co') {
+	.vjs-big-play-centered .vjs-play-progress, .video-js .vjs-volume-level
+	{
+		background-color: /*[[mainColor]]*/ !important;
+	}
+	/*openload*/
+	.video-js .vjs-load-progress div
+	{
+		background-color: /*[[dimmerText]]*/ !important;
+	}
+	/*openload*/
+	.vjs-menu-button-popup .vjs-menu-content li:hover
+	{
+		background-color: /*[[mainColor]]*/ !important;
+	}
+	.video-js .vjs-big-play-button:hover .vjs-icon-placeholder, .vjs-button:hover > .vjs-icon-placeholder,
+	.vjs-big-play-centered .vjs-progress-control:hover .vjs-play-progress::before,
+	/*openload*/
+	.video-js .vjs-mute-control:hover, .video-js .vjs-volume-menu-button:hover,
+	.video-js .vjs-play-control:hover, .video-js .vjs-control-bar .vjs-button:hover
+	{
+		color: /*[[mainColor]]*/ !important;
+	}
+	.video-js .vjs-control:focus, .video-js .vjs-control:focus::before, .video-js .vjs-control:hover::before
+	{
+		text-shadow: none !important;
+	}
+	.video-js .vjs-progress-control:hover .vjs-progress-holder, .video-js:hover .vjs-progress-holder
+	{
+    	font-size: 1.4em !important;
+	}
+	img[src="/images/rapidvideo_logo_player.png"]
+	{
+		display: none !important;
 	}
 }
