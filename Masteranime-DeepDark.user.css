@@ -634,7 +634,8 @@
 		background-color: var(--main-color) !important;
 	}
 	/*buttons*/
-	.video-js .vjs-big-play-button:hover, .video-js .vjs-control:hover
+	.video-js .vjs-big-play-button:hover, .vjs-masterani-skin:hover .vjs-big-play-button,
+	.video-js .vjs-control:hover
 	{
 		color: var(--main-color) !important;
 	}
