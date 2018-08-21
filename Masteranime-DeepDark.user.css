@@ -2,7 +2,7 @@
 @name Masteranime DeepDark
 @namespace github.com/RaitaroH/Masteranime-DeepDark
 @homepageURL https://github.com/RaitaroH/Masteranime-DeepDark
-@version 1.0.5
+@version 1.0.6
 @updateURL https://rawgit.com/RaitaroH/Masteranime-DeepDark/master/Masteranime-DeepDark.user.css
 @description Watch anime in a bright room with a dark theme. May the dark be kinder on thine eyes. (Masteranime dark theme)
 @author RaitaroH
@@ -137,7 +137,7 @@
 
 /*GNU General Public License v3.0.*/
 
-/*1.0.5*/
+/*1.0.6*/
 
 	/*Main color variables*/
 	:root
@@ -667,29 +667,28 @@
 		color: var(--dimmer-text) !important;
 	}
 }
-@-moz-document domain('mp4upload.com') {
-
-	#player .jw-display-icon-container .jw-button-color:hover, #player .jw-display-icon-container .jw-button-color:focus,
-	#player .jw-button-color.jw-toggle:not(.jw-icon-cast), #player .jw-button-color:hover:not(.jw-icon-cast), 
-	#player .jw-button-color:focus:not(.jw-icon-cast), #player .jw-button-color.jw-toggle.jw-off:hover:not(.jw-icon-cast)
+@-moz-document domain('mp4upload.com'), domain('vidstreaming.io') {
+	.jw-display-icon-container .jw-button-color:hover, .jw-display-icon-container .jw-button-color:focus,
+	.jw-button-color.jw-toggle:not(.jw-icon-cast), .jw-button-color:hover:not(.jw-icon-cast), 
+	.jw-button-color:focus:not(.jw-icon-cast), .jw-button-color.jw-toggle.jw-off:hover:not(.jw-icon-cast)
 	{
 		color: /*[[mainColor]]*/ !important;
 	}
-	#player .jw-progress, #player .jw-knob
+	.jw-progress, .jw-knob
 	{
 		background-color: /*[[mainColor]]*/ !important;
 	}
-	#player .jw-buffer
+	.jw-buffer
 	{
 		background-color: /*[[dimmerText]]*/ !important;
 	}
-	#player .jw-option.jw-active-option, #player .jw-option:not(.jw-active-option):hover, #player .jw-option:not(.jw-active-option):focus, 
-	#player .jw-settings-item-active, #player .jw-settings-content-item:hover, #player .jw-settings-content-item:focus, 
-	#player .jw-nextup-tooltip:hover, #player .jw-nextup-tooltip:focus, #player .jw-nextup-close:hover
+	.jw-option.jw-active-option, .jw-option:not(.jw-active-option):hover, .jw-option:not(.jw-active-option):focus, 
+	.jw-settings-item-active, .jw-settings-content-item:hover, .jw-settings-content-item:focus, 
+	.jw-nextup-tooltip:hover, .jw-nextup-tooltip:focus, .jw-nextup-close:hover
 	{
 		color: /*[[mainColor]]*/ !important;
 	}
-	#player .jw-color-active, #player .jw-color-active-hover:hover
+	.jw-color-active, .jw-color-active-hover:hover
 	{
 		color: /*[[mainColor]]*/ !important;
 		border-color: /*[[mainColor]]*/ !important;
