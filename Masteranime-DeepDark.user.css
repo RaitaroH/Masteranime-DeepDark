@@ -2,7 +2,7 @@
 @name Masteranime DeepDark
 @namespace gitlab.com/RaitaroH/Masteranime-DeepDark
 @homepageURL https://gitlab.com/RaitaroH/Masteranime-DeepDark
-@version 1.0.8
+@version 1.0.9
 @updateURL https://gitlab.com/RaitaroH/Masteranime-DeepDark/raw/master/Masteranime-DeepDark.user.css
 @description Watch anime in a bright room with a dark theme. May the dark be kinder on thine eyes. (Masteranime dark theme)
 @author RaitaroH
@@ -333,6 +333,11 @@
 		--main-text: #EFB26C;
 		--dimmer-text: #986E3F;
 		*/
+	}
+
+    /*ads - oh boy, here we go*/
+    .sixteen.wide.column.hero {
+        display: none !important;
 	}
 
 	/*Scrollbar fix for chrome*/
