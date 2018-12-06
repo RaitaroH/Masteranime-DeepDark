@@ -29,7 +29,7 @@
 	"Jisho_夜明け": "#EF7D6C",
 	"Custom": "/*[[custom-main-color]]*\/"
 }
-@var color custom-main-color "Custom main color" #00adee"
+@var color custom-main-color "Custom main color" "#00adee"
 @var select mainBackground 'Main background color' {
 	"DeepDark": "#111111",
 	"BreezeDark": "#232629",
@@ -635,7 +635,7 @@
 		color: var(--main-color) !important;
 	}
 	/*people wacthing*/
-	#watch > .ui.grid > .anime-info > .sixteen.wide.column > .info > .details > .stats .whos-watching .users .item .ui.avatar.image, 
+	#watch > .ui.grid > .anime-info > .sixteen.wide.column > .info > .details > .stats .whos-watching .users .item .ui.avatar.image,
 	#watch > .ui.grid > .anime-info > .sixteen.wide.column > .info > .details > .stats .whos-watching .users .item .ui.circular.label
 	{
 		border-color: var(--hover-background) !important;
@@ -682,7 +682,7 @@
 }
 @-moz-document domain('mp4upload.com'), domain('vidstreaming.io') {
 	.jw-display-icon-container .jw-button-color:hover, .jw-display-icon-container .jw-button-color:focus,
-	.jw-button-color.jw-toggle:not(.jw-icon-cast), .jw-button-color:hover:not(.jw-icon-cast), 
+	.jw-button-color.jw-toggle:not(.jw-icon-cast), .jw-button-color:hover:not(.jw-icon-cast),
 	.jw-button-color:focus:not(.jw-icon-cast), .jw-button-color.jw-toggle.jw-off:hover:not(.jw-icon-cast)
 	{
 		color: /*[[mainColor]]*/ !important;
@@ -695,8 +695,8 @@
 	{
 		background-color: /*[[dimmerText]]*/ !important;
 	}
-	.jw-option.jw-active-option, .jw-option:not(.jw-active-option):hover, .jw-option:not(.jw-active-option):focus, 
-	.jw-settings-item-active, .jw-settings-content-item:hover, .jw-settings-content-item:focus, 
+	.jw-option.jw-active-option, .jw-option:not(.jw-active-option):hover, .jw-option:not(.jw-active-option):focus,
+	.jw-settings-item-active, .jw-settings-content-item:hover, .jw-settings-content-item:focus,
 	.jw-nextup-tooltip:hover, .jw-nextup-tooltip:focus, .jw-nextup-close:hover
 	{
 		color: /*[[mainColor]]*/ !important;
